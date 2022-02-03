@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(./assets/Rubik-VariableFont_wght.ttf);
+}
+
+header {
+  background-color: black;
+  height: 150px;
+  color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  margin-right: 100px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+}
+
+li {
+  margin: 35px;
+  list-style: none;
+  font-size: 45px;
+  font-family: Rubik;
+  transition: 0.3s;
+}
+
+li:hover {
+    color: rgb(62, 220, 101); 
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  height: 150px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+  font-size: 45px;
+  margin-right: 100px;
+  font-family: Rubik;
+}
+
+a:hover {
+  color: rgb(62, 220, 101);
+}
+
+time {
+    margin: 0 30px;
+    font-size: 45px;
+}
+
+span {
+    font-size: 45px;
+    margin-left: 100px;
+}
+
+main {
+  min-height: calc(100vh - 300px);
+}
+
+.pause {
+    background: url(./assets/svg/pause.svg) no-repeat;
+    border: none;
+}
+
+.play {
+    background: url(./assets/svg/play.svg) no-repeat;
+    border: none;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+}
