@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 0.1px solid red; */
 }
 
 @font-face {
@@ -23,11 +24,11 @@ header ul {
   margin-right: 100px;
 }
 
-header img {
+/* header img {
   width: 100px;
   height: 100px;
-  margin: 100px;
-}
+  margin-left: 100px;
+} */
 
 li {
   margin: 35px;
@@ -35,10 +36,11 @@ li {
   font-size: 45px;
   font-family: Rubik;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 li:hover {
-    color: rgb(62, 220, 101); 
+    color: rgb(83, 163, 103); 
 }
 
 footer {
@@ -48,6 +50,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: Rubik;
 }
 
 a {
@@ -59,8 +62,13 @@ a {
   font-family: Rubik;
 }
 
+.active {
+  color: rgb(83, 163, 103);
+  fill: rgb(83, 163, 103);
+}
+
 a:hover {
-  color: rgb(62, 220, 101);
+  color: rgb(83, 163, 103); 
 }
 
 time {
@@ -75,11 +83,15 @@ span {
 
 main {
   min-height: calc(100vh - 300px);
+  position: relative;
+  
+  
 }
 
 .pause {
     background: url(./assets/svg/pause.svg) no-repeat;
     border: none;
+
 }
 
 .play {
@@ -88,6 +100,35 @@ main {
 }
 
 button {
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50%;
+    top: calc(100% / 2 - 100px);
+    left: calc(100% / 2 - 100px);
 }
+
+
+
+.picture {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+svg {
+  fill: #ffffff;
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+svg:hover {
+  fill: rgb(83, 163, 103); ;
+}
+
